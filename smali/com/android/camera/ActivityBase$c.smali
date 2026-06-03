@@ -79,10 +79,6 @@
     goto/16 :goto_1
 
     :pswitch_1
-    const p1, 0x7f140be1
-
-    invoke-static {p0, p1, v0}, LC/I3;->c(Landroid/content/Context;IZ)V
-
     return-void
 
     :pswitch_2
