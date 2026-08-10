@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/month_navigation_bar" android:paddingTop="@dimen/d3t" android:paddingBottom="@dimen/d3r" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <com.google.android.material.button.MaterialButton android:gravity="start|center" android:layout_gravity="start" android:id="@id/month_navigation_fragment_toggle" android:layout_width="wrap_content" android:layout_height="@dimen/d3s" android:insetTop="0.0dp" android:insetBottom="0.0dp" app:a6f="@drawable/material_ic_menu_arrow_down_black_24dp" app:a6h="textEnd" app:a6j="4.0dp" style="?adg" />
+    </FrameLayout>
+    <com.google.android.material.button.MaterialButton android:gravity="center" android:id="@id/month_navigation_previous" android:layout_width="@dimen/d54" android:layout_height="@dimen/d3s" android:insetTop="0.0dp" android:insetBottom="0.0dp" android:contentDescription="@string/g7_" app:a6f="@drawable/material_ic_keyboard_arrow_previous_black_24dp" style="?add" />
+    <com.google.android.material.button.MaterialButton android:gravity="center" android:id="@id/month_navigation_next" android:layout_width="@dimen/d54" android:layout_height="@dimen/d3s" android:insetTop="0.0dp" android:insetBottom="0.0dp" android:contentDescription="@string/g79" app:a6f="@drawable/material_ic_keyboard_arrow_next_black_24dp" style="?add" />
+</LinearLayout>

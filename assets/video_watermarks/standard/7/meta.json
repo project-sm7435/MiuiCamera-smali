@@ -1,0 +1,27 @@
+{
+  "version": 1.0,
+  "metadata": {
+    "name": "@wm_standard_7_name",
+    "id": "7",
+    "description": "standard_2",
+    "reminder": "@wm_common_video_reminder_v1",
+    "reminder_not_support_mode": [
+      "8K",
+      "120hz",
+      "log",
+      "slowmotion",
+      "mimoji"
+    ],
+    "limitation": {},
+    "priority": 2,
+    "position": "in",
+    "exclude_cases": [
+      "livephoto"
+    ],
+    "include_cases": [
+      "raw",
+      "thirdparty",
+      "mimoji"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bep">0.0dp</dimen>
+    <dimen name="beq">0.0dp</dimen>
+    <dimen name="bn4">6.0dp</dimen>
+    <dimen name="bn9">419.0dp</dimen>
+    <dimen name="d8i">79.0dp</dimen>
+    <dimen name="d8k">137.0dp</dimen>
+    <dimen name="d9f">35.0dp</dimen>
+    <dimen name="d9z">1378.0dp</dimen>
+    <dimen name="d_3">83.0dp</dimen>
+</resources>

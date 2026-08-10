@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bjh">138.72998dp</dimen>
+    <dimen name="bjp">318.97656dp</dimen>
+    <dimen name="bjq">111.099976dp</dimen>
+    <dimen name="bju">241.5dp</dimen>
+    <dimen name="bjy">277.9375dp</dimen>
+    <dimen name="bk2">111.099976dp</dimen>
+    <dimen name="bk3">166.29999dp</dimen>
+    <dimen name="bv1">40.0dp</dimen>
+    <dimen name="chc">58.22998dp</dimen>
+    <dimen name="d87">30.0dp</dimen>
+    <dimen name="d98">20.0dp</dimen>
+    <dimen name="d9f">53.359985dp</dimen>
+    <dimen name="d_t">20.0dp</dimen>
+    <dimen name="da5">355.0dp</dimen>
+</resources>

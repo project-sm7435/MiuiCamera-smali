@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/bdw" android:top="@dimen/bdw" android:right="@dimen/bdw" android:bottom="@dimen/bdw">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/bdz" />
+            <solid android:color="@color/black" />
+        </shape>
+    </item>
+    <item android:left="@dimen/bdx" android:top="@dimen/bdx" android:right="@dimen/bdx" android:bottom="@dimen/bdx">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/bdy" />
+            <solid android:color="@color/widget_background_color_dark" />
+        </shape>
+    </item>
+</layer-list>

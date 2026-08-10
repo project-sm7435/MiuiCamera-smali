@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="eu3">
+        <item quantity="one">%d সেকেন্ড ফাস্ট ফরওয়ার্ড করুন</item>
+        <item quantity="other">%d সেকেন্ড ফাস্ট ফরওয়ার্ড করুন</item>
+    </plurals>
+    <plurals name="eu4">
+        <item quantity="one">%d সেকেন্ড রিওয়াইন্ড করুন</item>
+        <item quantity="other">%d সেকেন্ড রিওয়াইন্ড করুন</item>
+    </plurals>
+    <plurals name="euc">
+        <item quantity="one">%dটি নতুন বিজ্ঞপ্তি</item>
+        <item quantity="other">%dটি নতুন বিজ্ঞপ্তি</item>
+    </plurals>
+</resources>

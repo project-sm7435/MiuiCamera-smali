@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <translatewithclip android:duration="350" app:wk="0.9" app:a32="@dimen/cqs" app:a33="@dimen/cqv" app:a7s="springInterpolator" app:a7t="true" app:ap8="0.5" app:apf="@dimen/cqp" app:b7k="0" />
+    <alpha android:interpolator="@anim/w" android:duration="100" android:startOffset="200" android:fromAlpha="1.0" android:toAlpha="0.0" />
+</set>

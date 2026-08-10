@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bda">45.0dp</dimen>
+    <dimen name="d8k">162.0dp</dimen>
+    <dimen name="d9g">72.0dp</dimen>
+    <dimen name="d9z">630.0dp</dimen>
+    <dimen name="d_3">72.0dp</dimen>
+</resources>

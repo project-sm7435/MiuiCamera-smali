@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="?aqe" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/cx8" android:paddingBottom="@dimen/cx7" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@android:id/icon" android:layout_width="@dimen/cx5" android:layout_height="@dimen/cx2" android:layout_marginStart="?an9" android:layout_marginEnd="@dimen/cx3" />
+            <TextView android:textAppearance="@style/hdj" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <androidx.preference.UnPressableLinearLayout android:gravity="center_vertical" android:paddingTop="@dimen/cx6" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <miuix.androidbasewidget.widget.SeekBar android:id="@id/seekbar" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" style="?aqd" />
+            <TextView android:textAppearance="?android:textAppearanceListItem" android:ellipsize="marquee" android:gravity="right" android:id="@id/seekbar_value" android:scrollbars="none" android:fadingEdge="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" />
+        </androidx.preference.UnPressableLinearLayout>
+    </LinearLayout>
+</LinearLayout>

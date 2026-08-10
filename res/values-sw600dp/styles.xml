@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="hs5" parent="@style/h_o">
+        <item name="ayf">center</item>
+        <item name="ays">fixed</item>
+    </style>
+</resources>

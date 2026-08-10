@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/cm_" android:textColor="?android:textColorAlertDialogListItem" android:gravity="center" android:id="@android:id/text1" android:background="?tx" android:paddingTop="@dimen/cmc" android:paddingBottom="@dimen/cmc" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/cmb" android:singleLine="false" android:fontFamily="@string/g4b" android:textDirection="locale" android:paddingStart="@dimen/cma" android:paddingEnd="@dimen/cma"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

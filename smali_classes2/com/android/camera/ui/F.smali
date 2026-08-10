@@ -1,0 +1,155 @@
+.class public final synthetic Lcom/android/camera/ui/F;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/Object;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
+
+    iput p2, p0, Lcom/android/camera/ui/F;->a:I
+
+    iput-object p1, p0, Lcom/android/camera/ui/F;->b:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/camera/ui/F;->b:Ljava/lang/Object;
+
+    iget p0, p0, Lcom/android/camera/ui/F;->a:I
+
+    packed-switch p0, :pswitch_data_0
+
+    const-string p0, "$view"
+
+    check-cast v0, Landroid/view/View;
+
+    invoke-static {v0, p0}, Lkotlin/jvm/internal/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p0, "animation"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    const-string p1, "null cannot be cast to non-null type kotlin.Int"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/k;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p0, Ljava/lang/Integer;
+
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
+
+    move-result p0
+
+    instance-of p1, v0, Landroid/widget/TextView;
+
+    if-eqz p1, :cond_0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    invoke-virtual {v0, p0}, Landroid/widget/TextView;->setTextColor(I)V
+
+    :cond_0
+    return-void
+
+    :pswitch_0
+    check-cast v0, Lk5/w;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Float;
+
+    invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
+
+    move-result p0
+
+    iget-object p1, v0, Lk5/w;->u:Lk5/n;
+
+    invoke-virtual {p1, p0}, Lk5/n;->n(F)V
+
+    return-void
+
+    :pswitch_1
+    check-cast v0, Lcom/android/camera/ui/E0;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Float;
+
+    invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
+
+    move-result p0
+
+    iget p1, v0, Lcom/android/camera/ui/E0;->o:I
+
+    int-to-float p1, p1
+
+    const v1, 0x3fa66666    # 1.3f
+
+    invoke-static {p0, p1, v1, p1}, LMe/X1;->d(FFFF)F
+
+    move-result p0
+
+    float-to-int p0, p0
+
+    invoke-virtual {v0, p0}, Lcom/android/camera/ui/E0;->c(I)V
+
+    return-void
+
+    :pswitch_2
+    sget p0, Lcom/android/camera/ui/HorizontalScopeZoomView;->r0:I
+
+    check-cast v0, Lcom/android/camera/ui/HorizontalScopeZoomView;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Float;
+
+    invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
+
+    move-result p0
+
+    iput p0, v0, Lcom/android/camera/ui/HorizontalScopeZoomView;->g0:F
+
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
+
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method

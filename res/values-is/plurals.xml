@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="eu3">
+        <item quantity="one">Spóla áfram um %d sekúndu</item>
+        <item quantity="other">Spóla áfram um %d sekúndur</item>
+    </plurals>
+    <plurals name="eu4">
+        <item quantity="one">Spóla til baka um %d sekúndu</item>
+        <item quantity="other">Spóla til baka um %d sekúndur</item>
+    </plurals>
+    <plurals name="euc">
+        <item quantity="one">%d ný tilkynning</item>
+        <item quantity="other">%d nýjar tilkynningar</item>
+    </plurals>
+</resources>

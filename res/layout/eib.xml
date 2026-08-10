@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.camera.ui.TopAlertSlideSwitchButton android:layout_gravity="center_horizontal" android:id="@id/switch_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dpg" android:layout_marginTop="@dimen/b_8" app:q9="@dimen/dpc" app:a7e="#ffffff" app:a81="true" app:b1q="@dimen/dpi" />
+</FrameLayout>

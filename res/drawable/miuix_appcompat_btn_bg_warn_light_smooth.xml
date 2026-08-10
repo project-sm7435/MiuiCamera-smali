@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miuix.appcompat.app.AdaptRoundButtonDrawable app:n4="@dimen/cnu" app:ni="@dimen/cne" app:y4="0.3" app:ah6="true" app:ajc="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <child>
+        <miuix.appcompat.app.AlphaBlendingDrawable android:height="@dimen/cnh" app:ii="1.0" app:pk="1.0" app:y4="0.3" app:a3p="1.0" app:a63="1.0" app:a64="1.0" app:agd="@color/miuix_appcompat_button_bg_color_warn_normal_light" app:ajc="1.0" app:ank="1.0" />
+    </child>
+</miuix.appcompat.app.AdaptRoundButtonDrawable>

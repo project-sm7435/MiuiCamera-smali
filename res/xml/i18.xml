@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppFunctionAppMetadata appfn:description="小米相机 AppFunctions 接入点,供系统级 Agent 调用以控制相机。 - 使用 startOperation 支持以下选项：拍照-CAPTURE、录像-START_RECORDING、结束录像-STOP_RECORDING、暂停录像-PAUSE_RECORDING、继续录像-RESUME_RECORDING、切换前置摄像头-SWITCH_FRONT、切换前置摄像头-SWITCH_BACK。 - 使用 setCameraTimer 支持以下选项：关-0、3秒-3、5秒-5、10秒-10。"
+  xmlns:appfn="http://schemas.android.com/apk/androidxappfunctions" />

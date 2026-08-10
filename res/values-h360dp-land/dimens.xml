@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="d35">4.0dp</dimen>
+    <dimen name="d37">18.0dp</dimen>
+    <dimen name="d38">40.0dp</dimen>
+    <dimen name="d39">2.0dp</dimen>
+    <dimen name="d3a">2.0dp</dimen>
+    <dimen name="d3b">40.0dp</dimen>
+    <dimen name="d3c">20.0dp</dimen>
+    <dimen name="d3n">128.0dp</dimen>
+    <dimen name="d3p">4.0dp</dimen>
+</resources>

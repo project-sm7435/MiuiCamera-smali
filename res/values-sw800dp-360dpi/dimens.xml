@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="b_h">40.0dp</dimen>
+    <dimen name="ber">200.0dp</dimen>
+    <dimen name="bq6">25.0dp</dimen>
+    <dimen name="cd4">27.289978dp</dimen>
+    <dimen name="d97">20.0dp</dimen>
+    <dimen name="d9z">660.0dp</dimen>
+    <dimen name="d_i">20.0dp</dimen>
+    <dimen name="d_j">84.66998dp</dimen>
+    <dimen name="d_o">98.0dp</dimen>
+    <dimen name="dhy">56.0dp</dimen>
+    <dimen name="dhz">56.0dp</dimen>
+</resources>

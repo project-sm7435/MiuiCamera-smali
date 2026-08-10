@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/b_4" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:background="@drawable/toast_top_recommend_tip_bg_cv" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/b9y" android:layout_centerHorizontal="true" android:paddingStart="@dimen/b_2" android:paddingEnd="@dimen/b_0" android:layout_marginStart="@dimen/duh" android:layout_marginEnd="@dimen/duh"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

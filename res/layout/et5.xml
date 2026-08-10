@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miuix.visual.check.VisualCheckBox android:gravity="center" android:id="@id/border_location_box" android:focusable="true" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/e2x" android:layout_height="@dimen/e2x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <miuix.visual.check.BorderLayout android:gravity="center" android:focusable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/e2x" android:layout_height="@dimen/e2x" app:pl="@drawable/preference_wm_visual_check_border">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_watermark_border_location_item" android:layout_width="@dimen/e3d" android:layout_height="@dimen/e3d">
+            <ImageView android:id="@id/border_location_item_image" android:layout_width="30.0dp" android:layout_height="30.0dp" app:a_7="parent" app:a_c="parent" app:a_w="parent" app:aa0="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </miuix.visual.check.BorderLayout>
+</miuix.visual.check.VisualCheckBox>

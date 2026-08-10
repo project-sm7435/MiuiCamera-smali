@@ -1,0 +1,74 @@
+.class public final LP9/d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public a:LP9/c;
+
+.field public b:LP9/c;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    sget-object v0, LP9/c;->a:LP9/c;
+
+    iput-object v0, p0, LP9/d;->a:LP9/c;
+
+    iput-object v0, p0, LP9/d;->b:LP9/c;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(LP9/c;)V
+    .locals 1
+
+    iget-object v0, p0, LP9/d;->a:LP9/c;
+
+    if-eq v0, p1, :cond_0
+
+    iput-object v0, p0, LP9/d;->b:LP9/c;
+
+    iput-object p1, p0, LP9/d;->a:LP9/c;
+
+    :cond_0
+    return-void
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    iget-object v0, p0, LP9/d;->a:LP9/c;
+
+    iget-object p0, p0, LP9/d;->b:LP9/c;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "JumpFlagHolder{ curJumpFlag="
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", lastJumpFlag="
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p0, " }"
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

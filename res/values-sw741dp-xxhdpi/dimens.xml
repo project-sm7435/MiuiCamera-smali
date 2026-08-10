@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="b_h">0.0dp</dimen>
+    <dimen name="bdc">75.629974dp</dimen>
+    <dimen name="ben">20.329987dp</dimen>
+    <dimen name="bep">51.50998dp</dimen>
+    <dimen name="ber">400.89844dp</dimen>
+    <dimen name="bf0">15.332977dp</dimen>
+    <dimen name="bfj">15.461975dp</dimen>
+    <dimen name="bpn">38.0dp</dimen>
+    <dimen name="bw6">55.45999dp</dimen>
+    <dimen name="bwc">3.0dp</dimen>
+    <dimen name="c2n">67.32999dp</dimen>
+    <dimen name="c2p">17.329987dp</dimen>
+    <dimen name="cdo">36.439972dp</dimen>
+    <dimen name="chd">14.549988dp</dimen>
+    <dimen name="chf">14.549988dp</dimen>
+    <dimen name="ck6">186.44199dp</dimen>
+    <dimen name="ck7">152.436dp</dimen>
+    <dimen name="ckn">10.909973dp</dimen>
+    <dimen name="cza">35.599976dp</dimen>
+    <dimen name="czg">14.699982sp</dimen>
+    <dimen name="czh">14.699982dp</dimen>
+    <dimen name="czk">15.0dp</dimen>
+    <dimen name="czz">14.299988sp</dimen>
+    <dimen name="d8e">46.0dp</dimen>
+    <dimen name="d_3">72.0dp</dimen>
+    <dimen name="d_h">-17.0dp</dimen>
+    <dimen name="d_r">95.22dp</dimen>
+    <dimen name="dbu">5.0dp</dimen>
+    <dimen name="dfr">34.95999dp</dimen>
+    <dimen name="dgp">0.0dp</dimen>
+    <dimen name="drn">10.909973dp</dimen>
+    <dimen name="ds3">13.439972dp</dimen>
+    <dimen name="dxe">17.142975dp</dimen>
+</resources>

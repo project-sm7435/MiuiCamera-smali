@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/constraintLayout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:alignmentMode="alignMargins" android:importantForAccessibility="no" android:layout_marginHorizontal="@dimen/e41"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start|center" android:id="@id/b30" android:layout_width="match_parent" android:layout_height="@dimen/e3w" android:importantForAccessibility="no" app:a_w="parent" app:aa0="parent">
+        <TextView android:textSize="@dimen/e3x" android:textStyle="bold" android:textColor="@color/watermark_text_color" android:id="@id/wm_border_location_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gp0" android:fontFamily="misans-normal" />
+    </LinearLayout>
+    <HorizontalScrollView android:gravity="start|center" android:orientation="horizontal" android:id="@id/scrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" app:a_w="parent" app:a_z="@id/b30">
+        <miuix.visual.check.VisualCheckGroup android:id="@id/border_location_group" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/e2x" android:layout_marginTop="@dimen/e3e" app:a8r="@dimen/e35" app:a_w="parent" app:a_z="@id/b30" />
+    </HorizontalScrollView>
+    <View android:id="@id/y9" android:background="@color/preference_watermark_edit_layout_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/e37" android:layout_marginTop="@dimen/e38" app:a_7="parent" app:a_z="@id/scrollView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

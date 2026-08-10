@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center|top" android:orientation="horizontal" android:id="@id/fullscreen_header" android:paddingLeft="@dimen/d3f" android:paddingTop="@dimen/d3f" android:paddingRight="@dimen/d3f" android:layout_width="match_parent" android:layout_height="@dimen/d3i" android:paddingStart="@dimen/d3f" android:paddingEnd="@dimen/d3f" style="?ad9">
+        <com.google.android.material.button.MaterialButton android:gravity="center" android:layout_gravity="top" android:id="@id/cancel_button" android:padding="12.0dp" android:layout_width="@dimen/d54" android:layout_height="@dimen/d54" android:insetTop="0.0dp" android:insetBottom="0.0dp" android:contentDescription="@string/g7d" app:a6f="@drawable/material_ic_clear_black_24dp" style="?ad6" />
+        <FrameLayout android:id="@id/mtrl_picker_header_title_and_selection" android:paddingLeft="@dimen/d3k" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:paddingStart="@dimen/d3k">
+            <TextView android:gravity="start|bottom" android:layout_gravity="start|top" android:id="@id/mtrl_picker_title_text" android:layout_width="match_parent" android:layout_height="wrap_content" app:a2k="@dimen/d3z" style="?ada" />
+            <TextView android:gravity="start|bottom" android:layout_gravity="start|top" android:id="@id/epm" android:paddingBottom="@dimen/d3u" android:layout_width="match_parent" android:layout_height="wrap_content" app:a2k="@dimen/d3v" app:ab7="@dimen/d3j" style="?ad_" />
+        </FrameLayout>
+        <LinearLayout android:orientation="@integer/e9f" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:layout_gravity="end|top" android:id="@id/confirm_button" android:layout_width="wrap_content" android:layout_height="@dimen/d54" android:text="@string/g7w" android:contentDescription="@string/g7w" style="?ad7" />
+            <include layout="@layout/epo" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/d3g" style="?ad8" />
+</merge>

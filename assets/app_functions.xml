@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<appfunctions>
+    <appfunction>
+        <function_id>com.xiaomi.camera.agent.functions.AgentToolFunctions#setCameraTimer</function_id>
+        <enabled_by_default>true</enabled_by_default>
+    </appfunction>
+    <appfunction>
+        <function_id>com.xiaomi.camera.agent.functions.AgentToolFunctions#startOperation</function_id>
+        <enabled_by_default>true</enabled_by_default>
+    </appfunction>
+    <appfunction>
+        <function_id>com.xiaomi.camera.agent.functions.AgentToolFunctions#switchMode</function_id>
+        <enabled_by_default>true</enabled_by_default>
+    </appfunction>
+</appfunctions>

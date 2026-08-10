@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="eu3">
+        <item quantity="one">Aurreratu %d segundo</item>
+        <item quantity="other">Aurreratu %d segundo</item>
+    </plurals>
+    <plurals name="eu4">
+        <item quantity="one">Atzeratu %d segundo</item>
+        <item quantity="other">Atzeratu %d segundo</item>
+    </plurals>
+    <plurals name="euc">
+        <item quantity="one">%d jakinarazpen berri</item>
+        <item quantity="other">%d jakinarazpen berri</item>
+    </plurals>
+</resources>

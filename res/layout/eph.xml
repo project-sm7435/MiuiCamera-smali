@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/date_picker_actions" android:paddingRight="@dimen/d34" android:layout_width="match_parent" android:layout_height="@dimen/d33" android:paddingEnd="@dimen/d34"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center_vertical" android:id="@id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/g7d" style="?mz" />
+    <Button android:layout_gravity="center_vertical" android:id="@id/confirm_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/d32" android:text="@string/g7e" style="?n1" />
+</LinearLayout>

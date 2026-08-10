@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/btn_cancel" android:background="@null" android:layout_width="@dimen/bkm" android:layout_height="@dimen/bkm" android:src="@drawable/miuix_action_icon_immersion_close_dark" android:contentDescription="@string/g4k" app:a_7="parent" app:a_w="parent" app:aa0="parent" />
+    <TextView android:textSize="@dimen/bkq" android:textColor="@color/mode_edit_sub_title_color" android:ellipsize="marquee" android:layout_gravity="clip_horizontal" android:id="@id/b30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/bkp" android:text="@string/g4u" android:marqueeRepeatLimit="marquee_forever" app:a_7="parent" app:a_d="@id/btn_confirm" app:a_v="@id/btn_cancel" app:aa0="parent" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/btn_confirm" android:background="@null" android:layout_width="@dimen/bkm" android:layout_height="@dimen/bkm" android:src="@drawable/miuix_action_icon_immersion_confirm_dark" android:contentDescription="@string/fm6" app:a_7="parent" app:a_c="parent" app:aa0="parent" />
+</merge>
