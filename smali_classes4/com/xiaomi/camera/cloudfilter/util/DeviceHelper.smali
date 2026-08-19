@@ -13,29 +13,29 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    const-string v0, "\ubce4\ubce3\ubcef\ubcff"
+    const-string v0, "\u383f\u3838\u3834\u3824"
 
-    const v1, 0x175cbc96
+    const v1, -0x345fc7b3    # -2.1000346E7f
 
-    invoke-static {v1, v0}, LGf/e0;->i(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0}, LSg/H;->l(ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    const-string v2, "\ubcf1\ubcf9\ubcfd\ubce3"
+    const-string v2, "\u382a\u3822\u3826\u3838"
 
-    invoke-static {v1, v2}, LGf/e0;->i(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2}, LSg/H;->l(ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    const-string v3, "\ubcf5\ubcfe\ubcf3\ubcf8\ubcf0\ubcf3\ubcf8\ubcf1"
+    const-string v3, "\u382e\u3825\u3828\u3823\u382b\u3828\u3823\u382a"
 
-    invoke-static {v1, v3}, LGf/e0;->i(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v3}, LSg/H;->l(ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    const-string v4, "\ubcf7\ubce3\ubce4\ubcf9\ubce4\ubcf7"
+    const-string v4, "\u382c\u3838\u383f\u3822\u383f\u382c"
 
-    invoke-static {v1, v4}, LGf/e0;->i(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v4}, LSg/H;->l(ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -45,9 +45,9 @@
 
     sput-object v0, Lcom/xiaomi/camera/cloudfilter/util/DeviceHelper;->sLeiCaList:[Ljava/lang/String;
 
-    const-string v0, "\ubce4\ubcf9\ubce2\ubcfe\ubcfd\ubcf9"
+    const-string v0, "\u383f\u3822\u3839\u3825\u3826\u3822"
 
-    invoke-static {v1, v0}, LGf/e0;->i(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0}, LSg/H;->l(ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -69,95 +69,17 @@
 .end method
 
 .method public static isLeiCaDevice()Z
-    .locals 6
+    .locals 1
 
-    sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
+    const/4 v0, 0x1
 
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_0
-
-    return v2
-
-    :cond_0
-    sget-object v1, Lcom/xiaomi/camera/cloudfilter/util/DeviceHelper;->sLeiCaList:[Ljava/lang/String;
-
-    array-length v3, v1
-
-    move v4, v2
-
-    :goto_0
-    if-ge v4, v3, :cond_2
-
-    aget-object v5, v1, v4
-
-    invoke-virtual {v5, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    const/4 v2, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    :goto_1
-    return v2
+    return v0
 .end method
 
 .method public static isNotLeiCaDevice()Z
-    .locals 6
+    .locals 1
 
-    sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
+    const/4 v0, 0x0
 
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_0
-
-    return v2
-
-    :cond_0
-    sget-object v1, Lcom/xiaomi/camera/cloudfilter/util/DeviceHelper;->sNotLeiCaList:[Ljava/lang/String;
-
-    array-length v3, v1
-
-    move v4, v2
-
-    :goto_0
-    if-ge v4, v3, :cond_2
-
-    aget-object v5, v1, v4
-
-    invoke-virtual {v5, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    const/4 v2, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    :goto_1
-    return v2
+    return v0
 .end method
