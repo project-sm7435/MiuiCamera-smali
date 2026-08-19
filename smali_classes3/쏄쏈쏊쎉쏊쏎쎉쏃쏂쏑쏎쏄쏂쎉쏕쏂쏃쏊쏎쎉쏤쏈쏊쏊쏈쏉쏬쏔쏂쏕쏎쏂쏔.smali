@@ -539,7 +539,7 @@
 .method public R3()Z
     .locals 0
 
-    instance-of p0, p0, L堂堎堌塏堌堈塏堅堄堗堈堂堄塏堳堎堕堉堊堎堾堑堓堎;
+    const/4 p0, 0x1
 
     return p0
 .end method

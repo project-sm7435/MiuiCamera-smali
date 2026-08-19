@@ -55,9 +55,7 @@
 .method public R3()Z
     .locals 0
 
-    instance-of p0, p0, L珐珜珞玝珞珚玝珗珖珅珚珐珖玝珰珜珁珜珇珬珃珁珜珬珞;
-
-    xor-int/lit8 p0, p0, 0x1
+    const/4 p0, 0x1
 
     return p0
 .end method

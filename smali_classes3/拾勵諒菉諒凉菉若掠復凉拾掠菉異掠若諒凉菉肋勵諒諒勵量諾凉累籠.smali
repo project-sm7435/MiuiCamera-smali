@@ -369,7 +369,7 @@
 .method public R3()Z
     .locals 0
 
-    instance-of p0, p0, L낿낳낱냲낱낵냲낸낹낪낵낿낹냲낛낳낥낽;
+    const/4 p0, 0x1
 
     return p0
 .end method
