@@ -1,0 +1,33 @@
+name: Build MiuiCamera
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Apktool
+        run: |
+          wget https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar -O apktool.jar
+
+      - name: Build APK
+        run: |
+          java -jar apktool.jar b . -o MiuiCamera-unsigned.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: MiuiCamera
+          path: MiuiCamera-unsigned.apk
