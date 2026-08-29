@@ -1,0 +1,101 @@
+.class public final LW7/a$h;
+.super Lkotlin/jvm/internal/m;
+.source "SourceFile"
+
+# interfaces
+.implements Lwf/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LW7/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/m;",
+        "Lwf/a<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:LW7/a$h;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, LW7/a$h;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lkotlin/jvm/internal/m;-><init>(I)V
+
+    sput-object v0, LW7/a$h;->a:LW7/a$h;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 2
+
+    const-string p0, "ro.miui.ui.version.name"
+
+    :try_start_0
+    const-string v0, "android.os.SystemProperties"
+
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v0
+
+    const-class v1, Ljava/lang/String;
+
+    filled-new-array {v1}, [Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, LW7/c;->a(Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    filled-new-array {p0}, [Ljava/lang/Object;
+
+    move-result-object p0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    const-string v0, "null cannot be cast to non-null type kotlin.String"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/k;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p0, Ljava/lang/String;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    const-string p0, ""
+
+    :goto_0
+    return-object p0
+.end method

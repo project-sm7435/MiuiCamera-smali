@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="hry" parent="@style/h_h">
+        <item name="ayd">center</item>
+        <item name="ayq">fixed</item>
+    </style>
+</resources>

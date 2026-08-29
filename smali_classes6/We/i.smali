@@ -1,0 +1,416 @@
+.class public final LWe/i;
+.super LWe/a;
+.source "SourceFile"
+
+
+# virtual methods
+.method public final d()V
+    .locals 2
+
+    const/16 v0, 0x1b
+
+    invoke-static {v0}, Lcom/xiaomi/gl/ShaderManager;->a(I)I
+
+    move-result v0
+
+    iput v0, p0, LWe/a;->a:I
+
+    if-eqz v0, :cond_0
+
+    invoke-static {v0}, Landroid/opengl/GLES20;->glUseProgram(I)V
+
+    iget v0, p0, LWe/a;->a:I
+
+    const-string v1, "uMVPMatrix"
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glGetUniformLocation(ILjava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, LWe/a;->b:I
+
+    iget v0, p0, LWe/a;->a:I
+
+    const-string v1, "uSTMatrix"
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glGetUniformLocation(ILjava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, LWe/a;->c:I
+
+    iget v0, p0, LWe/a;->a:I
+
+    const-string v1, "sTexture"
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glGetUniformLocation(ILjava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, LWe/a;->d:I
+
+    iget v0, p0, LWe/a;->a:I
+
+    const-string v1, "aPosition"
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glGetAttribLocation(ILjava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, LWe/a;->e:I
+
+    iget v0, p0, LWe/a;->a:I
+
+    const-string v1, "aTexCoord"
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glGetAttribLocation(ILjava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, LWe/a;->f:I
+
+    iget v0, p0, LWe/a;->a:I
+
+    const-string v1, "width"
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glGetUniformLocation(ILjava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, LWe/a;->g:I
+
+    iget v0, p0, LWe/a;->a:I
+
+    const-string v1, "height"
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glGetUniformLocation(ILjava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, LWe/a;->h:I
+
+    iget v0, p0, LWe/a;->a:I
+
+    const-string v1, "radius"
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glGetUniformLocation(ILjava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, LWe/a;->i:I
+
+    iget v0, p0, LWe/a;->a:I
+
+    const-string v1, "scale"
+
+    invoke-static {v0, v1}, Landroid/opengl/GLES20;->glGetUniformLocation(ILjava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, LWe/a;->j:I
+
+    return-void
+
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-class v0, LWe/i;
+
+    const-string v1, "UpBlurProgram: mProgram = 0"
+
+    invoke-static {v0, v1}, LH1/d;->g(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public final f(LMe/h;FIIII)V
+    .locals 15
+
+    move-object v0, p0
+
+    move-object/from16 v1, p1
+
+    move/from16 v2, p3
+
+    move/from16 v3, p4
+
+    move/from16 v4, p5
+
+    invoke-virtual {p0, v2, v3, v4}, LWe/a;->a(III)V
+
+    invoke-virtual {p0, v1, v2, v3}, LWe/a;->b(LMe/h;II)V
+
+    iget v2, v0, LWe/a;->e:I
+
+    invoke-static {v2}, Landroid/opengl/GLES20;->glEnableVertexAttribArray(I)V
+
+    iget v2, v0, LWe/a;->f:I
+
+    invoke-static {v2}, Landroid/opengl/GLES20;->glEnableVertexAttribArray(I)V
+
+    iget v3, v0, LWe/a;->e:I
+
+    iget-object v8, v0, LWe/a;->q:Ljava/nio/FloatBuffer;
+
+    const/4 v4, 0x2
+
+    const/16 v7, 0x8
+
+    const/16 v5, 0x1406
+
+    const/4 v6, 0x0
+
+    invoke-static/range {v3 .. v8}, Landroid/opengl/GLES20;->glVertexAttribPointer(IIIZILjava/nio/Buffer;)V
+
+    iget v9, v0, LWe/a;->f:I
+
+    iget-object v14, v0, LWe/a;->r:Ljava/nio/FloatBuffer;
+
+    const/4 v10, 0x2
+
+    const/16 v13, 0x8
+
+    const/16 v11, 0x1406
+
+    const/4 v12, 0x0
+
+    invoke-static/range {v9 .. v14}, Landroid/opengl/GLES20;->glVertexAttribPointer(IIIZILjava/nio/Buffer;)V
+
+    const v2, 0x84c0
+
+    invoke-static {v2}, Landroid/opengl/GLES20;->glActiveTexture(I)V
+
+    const/16 v2, 0xde1
+
+    move/from16 v3, p6
+
+    invoke-static {v2, v3}, Landroid/opengl/GLES20;->glBindTexture(II)V
+
+    iget v2, v0, LWe/a;->d:I
+
+    const/4 v3, 0x0
+
+    invoke-static {v2, v3}, Landroid/opengl/GLES20;->glUniform1i(II)V
+
+    iget v2, v0, LWe/a;->b:I
+
+    iget-object v4, v1, LMe/h;->j:LRe/h;
+
+    invoke-virtual {v4}, LRe/h;->a()[F
+
+    move-result-object v4
+
+    const/4 v5, 0x1
+
+    invoke-static {v2, v5, v3, v4, v3}, Landroid/opengl/GLES20;->glUniformMatrix4fv(IIZ[FI)V
+
+    iget v2, v0, LWe/a;->c:I
+
+    iget-object v4, v1, LMe/h;->j:LRe/h;
+
+    iget-object v4, v4, LRe/h;->e:[F
+
+    invoke-static {v2, v5, v3, v4, v3}, Landroid/opengl/GLES20;->glUniformMatrix4fv(IIZ[FI)V
+
+    iget v2, v0, LWe/a;->j:I
+
+    move/from16 v4, p2
+
+    invoke-static {v2, v4}, Landroid/opengl/GLES20;->glUniform1f(IF)V
+
+    iget v2, v0, LWe/a;->g:I
+
+    iget-object v1, v1, LMe/h;->f:Landroid/graphics/Rect;
+
+    invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
+
+    move-result v4
+
+    int-to-float v4, v4
+
+    invoke-static {v2, v4}, Landroid/opengl/GLES20;->glUniform1f(IF)V
+
+    iget v2, v0, LWe/a;->h:I
+
+    invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    invoke-static {v2, v1}, Landroid/opengl/GLES20;->glUniform1f(IF)V
+
+    iget v1, v0, LWe/a;->i:I
+
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    invoke-static {v1, v2}, Landroid/opengl/GLES20;->glUniform1f(IF)V
+
+    const/4 v1, 0x5
+
+    const/4 v2, 0x4
+
+    invoke-static {v1, v3, v2}, Landroid/opengl/GLES20;->glDrawArrays(III)V
+
+    iget v1, v0, LWe/a;->e:I
+
+    invoke-static {v1}, Landroid/opengl/GLES20;->glDisableVertexAttribArray(I)V
+
+    iget v0, v0, LWe/a;->f:I
+
+    invoke-static {v0}, Landroid/opengl/GLES20;->glDisableVertexAttribArray(I)V
+
+    invoke-static {v3}, Lcom/xiaomi/gl/MIGL;->glBindFramebuffer(I)V
+
+    return-void
+.end method
+
+.method public final g(LMe/h;)V
+    .locals 9
+
+    iget-object v0, p1, LMe/h;->f:Landroid/graphics/Rect;
+
+    invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
+
+    move-result v0
+
+    div-int/lit8 v3, v0, 0x10
+
+    iget-object v7, p1, LMe/h;->f:Landroid/graphics/Rect;
+
+    invoke-virtual {v7}, Landroid/graphics/Rect;->height()I
+
+    move-result v0
+
+    div-int/lit8 v4, v0, 0x10
+
+    iget-object v0, p0, LWe/a;->s:[I
+
+    const/4 v1, 0x5
+
+    aget v6, v0, v1
+
+    const/high16 v2, 0x3d800000    # 0.0625f
+
+    const/4 v5, 0x4
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    invoke-virtual/range {v0 .. v6}, LWe/i;->f(LMe/h;FIIII)V
+
+    invoke-virtual {v7}, Landroid/graphics/Rect;->width()I
+
+    move-result v0
+
+    div-int/lit8 v3, v0, 0x8
+
+    invoke-virtual {v7}, Landroid/graphics/Rect;->height()I
+
+    move-result v0
+
+    div-int/lit8 v4, v0, 0x8
+
+    iget-object v0, p0, LWe/a;->s:[I
+
+    const/4 v8, 0x4
+
+    aget v6, v0, v8
+
+    const/high16 v2, 0x3e000000    # 0.125f
+
+    const/4 v5, 0x3
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    invoke-virtual/range {v0 .. v6}, LWe/i;->f(LMe/h;FIIII)V
+
+    invoke-virtual {v7}, Landroid/graphics/Rect;->width()I
+
+    move-result v0
+
+    div-int/lit8 v3, v0, 0x4
+
+    invoke-virtual {v7}, Landroid/graphics/Rect;->height()I
+
+    move-result v0
+
+    div-int/lit8 v4, v0, 0x4
+
+    iget-object v0, p0, LWe/a;->s:[I
+
+    const/4 v1, 0x3
+
+    aget v6, v0, v1
+
+    const/high16 v2, 0x3e800000    # 0.25f
+
+    const/4 v5, 0x2
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    invoke-virtual/range {v0 .. v6}, LWe/i;->f(LMe/h;FIIII)V
+
+    invoke-virtual {v7}, Landroid/graphics/Rect;->width()I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    div-int/lit8 v3, v0, 0x2
+
+    invoke-virtual {v7}, Landroid/graphics/Rect;->height()I
+
+    move-result v0
+
+    div-int/lit8 v4, v0, 0x2
+
+    iget-object v0, p0, LWe/a;->s:[I
+
+    aget v6, v0, v1
+
+    const/high16 v2, 0x3f000000    # 0.5f
+
+    const/4 v5, 0x1
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    invoke-virtual/range {v0 .. v6}, LWe/i;->f(LMe/h;FIIII)V
+
+    invoke-virtual {v7}, Landroid/graphics/Rect;->width()I
+
+    move-result v3
+
+    invoke-virtual {v7}, Landroid/graphics/Rect;->height()I
+
+    move-result v4
+
+    iget-object v0, p0, LWe/a;->s:[I
+
+    const/4 v1, 0x1
+
+    aget v6, v0, v1
+
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    const/4 v5, 0x6
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    invoke-virtual/range {v0 .. v6}, LWe/i;->f(LMe/h;FIIII)V
+
+    return-void
+.end method

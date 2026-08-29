@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="hs3" parent="@style/hoe">
+        <item name="android:textAppearance">@style/hd0</item>
+        <item name="android:textColor">?xz</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@string/g41</item>
+        <item name="android:breakStrategy">balanced</item>
+    </style>
+</resources>

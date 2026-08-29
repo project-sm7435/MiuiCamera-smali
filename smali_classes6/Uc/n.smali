@@ -1,0 +1,35 @@
+.class public final LUc/n;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    const-string v0, "vp.cloud.material.debug"
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, LYb/f;->c(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "debug/"
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, "release/"
+
+    :goto_0
+    sput-object v0, LUc/n;->a:Ljava/lang/String;
+
+    return-void
+.end method
