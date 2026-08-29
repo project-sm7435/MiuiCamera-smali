@@ -1896,7 +1896,7 @@
 .method public V3()Z
     .locals 0
 
-    const/4 p0, 0x1
+    instance-of p0, p0, L震霋霉靊霉霍靊需霁霒霍震霁靊霡霉霁霖霅霈需霻霔霖霋霻霖;
 
     return p0
 .end method
@@ -2122,7 +2122,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const/4 p0, 0x0
+    instance-of p0, p0, L震霋霉靊霉霍靊需霁霒霍震霁靊霡霉霁霖霅霈需霻霔霖霋霻霖;
 
     return p0
 .end method
@@ -2717,7 +2717,7 @@
 .method public e3()Z
     .locals 0
 
-    const/4 p0, 0x0
+    instance-of p0, p0, L震霋霉靊霉霍靊需霁霒霍震霁靊霡霉霁霖霅霈需霻霔霖霋霻霖;
 
     return p0
 .end method
